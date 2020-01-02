@@ -4,11 +4,12 @@
     <header class="main-header">
 
       <!-- Logo -->
-      <a href="index2.html" class="logo">
+      <a href="/" class="logo">
         <!-- mini logo for sidebar mini 50x50 pixels -->
-        <span class="logo-mini">A</span>
+        <span class="logo-mini">G</span>
         <!-- logo for regular state and mobile devices -->
-        <span class="logo-lg"><b>Admin</b>Lte</span>
+        <img src="./dist/img/Logo-gpm.jpg" class="img-fluid img-thumbnail" alt="GPM">
+        <span class="logo-lg"><b>GC-GPM</b></span>
       </a>
       
       <!-- Header Navbar: style can be found in header.less -->
@@ -22,7 +23,7 @@
           <ul class="nav navbar-nav">
             <li>
               <a href="#">
-                <span class="hidden-xs">您当前拥有0积分</span>
+                <span class="hidden-xs">Datos</span>
               </a>
             </li>
             <!-- Messages: style can be found in dropdown.less-->
@@ -33,7 +34,7 @@
                 <span class="label label-warning">10</span>
               </a>
               <ul class="dropdown-menu">
-                <li class="header text-center">您有10条待办事项需要处理</li>
+                <li class="header text-center">Menú principal</li>
                 <li>
                   <!-- inner menu: contains the actual data -->
                   <ul class="menu">
@@ -65,24 +66,26 @@
                     </li>
                   </ul>
                 </li>
-                <li class="footer"><a href="#">查看全部</a></li>
+                <li class="footer"><a href="#">Ver todo</a></li>
               </ul>
             </li>
             <!-- Tasks: style can be found in dropdown.less -->
             <!-- User Account: style can be found in dropdown.less -->
             <li class="dropdown user user-menu">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                <img src="./dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
-                <span class="hidden-xs">张三</span>
+                <img src="./dist/img/user2-160x160.jpg" class="user-image" alt="GPM">
+                <!--<img src="./dist/img/Logo-gpm.jpg" class="user-image" alt="GPM">-->
+                <span class="hidden-xs">Menú</span>
               </a>
               <ul class="dropdown-menu">
                 <!-- User image -->
                 <li class="user-header">
-                  <img src="./dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                  <img src="./dist/img/user2-160x160.jpg" class="img-circle" alt="GPM">
+                  <!--<img src="./dist/img/logo-gpm-2.png" class="img-circle" alt="GPM">-->
 
                   <p>
-                    张三 - 前端开发者
-                    <small>注册日期：2016年9月14日</small>
+                    GC-GPM
+                    <!--<small>注册日期：2016年9月14日</small>-->
                   </p>
                 </li>
                 <!-- Menu Body -->
@@ -106,10 +109,10 @@
                 <!-- Menu Footer-->
                 <li class="user-footer">
                   <div class="pull-left">
-                    <a href="#" class="btn btn-default btn-flat">个人资料</a>
+                    <a href="#" class="btn btn-default btn-flat">Datos personales</a>
                   </div>
                   <div class="pull-right">
-                    <a href="#" class="btn btn-default btn-flat">退出登录</a>
+                    <a href="#" class="btn btn-default btn-flat">Cerrar sesión</a>
                   </div>
                 </li>
               </ul>
@@ -130,11 +133,12 @@
         <!-- Sidebar user panel -->
         <div class="user-panel">
           <div class="pull-left image">
-            <img src="./dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+            <!--<img src="./dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">-->
+            <img src="./dist/img/Logo-gpm.jpg" class="img-fluid img-thumbnail" alt="GPM">
           </div>
           <div class="pull-left info">
-            <p>张三</p>
-            <a href="#"><i class="fa fa-circle text-success"></i>在线</a>
+            <p>GC-GPM</p>
+            <a href="#"><i class="fa fa-circle text-success"></i>En línea</a>
           </div>
         </div>
         <!-- search form -->
@@ -150,10 +154,10 @@
         <!-- /.search form -->
         <!-- sidebar menu: : style can be found in sidebar.less -->
         <ul class="sidebar-menu">
-          <li class="header">MAIN NAVIGATION</li>
+          <li class="header">Navegación Principal</li>
           <li class="active">
             <router-link :to="{ path:'/' }">
-              <i class="glyphicon glyphicon-home"></i> <span>主页</span>
+              <i class="glyphicon glyphicon-home"></i> <span>Inicio</span>
             </router-link>
             <!--<ul class="treeview-menu">-->
               <!--<li><a href="index.html"><i class="fa fa-circle-o"></i> Dashboard v1</a></li>-->
@@ -163,15 +167,16 @@
           <li class="treeview">
             <a href="#">
               <i class="fa fa-files-o"></i>
-              <span>考勤管理</span>
+              <span>Planif. y Ord. Territorial</span>
               <span class="pull-right-container">
                 <i class="fa fa-angle-left pull-right"></i>
                 <!-- <small class="label pull-right bg-green">new</small> -->
               </span>
             </a>
             <ul class="treeview-menu">
-              <li><router-link to="attendance"><i class="fa fa-circle-o"></i>我的考勤记录</router-link></li>
-              <li><router-link to="leave_record"><i class="fa fa-circle-o"></i>调休使用记录</router-link></li>
+              <li><router-link to="attendance"><i class="fa fa-circle-o"></i>Transparencia y Seguimiento</router-link></li>
+              <li><router-link to="leave_record"><i class="fa fa-circle-o"></i>Manual Cumplimiento CGE</router-link></li>
+              <li><router-link to="leave_record"><i class="fa fa-circle-o"></i>Manual Transp. y Procesos</router-link></li>
               <!--<li><a href="pages/layout/boxed.html"><i class="fa fa-circle-o"></i> Boxed</a></li>-->
               <!--<li><a href="pages/layout/fixed.html"><i class="fa fa-circle-o"></i> Fixed</a></li>-->
               <!--<li><a href="pages/layout/collapsed-sidebar.html"><i class="fa fa-circle-o"></i> Collapsed Sidebar</a></li>-->
@@ -179,16 +184,16 @@
           </li>
           <li class="treeview">
             <a href="#">
-              <i class="fa fa-th"></i> <span>加班管理</span>
+              <i class="fa fa-th"></i> <span>Direcci&oacute;n de TTHH</span>
               <span class="pull-right-container">
                 <i class="fa fa-angle-left pull-right"></i>
                 <!-- <small class="label pull-right bg-green">new</small> -->
               </span>
             </a>
             <ul class="treeview-menu">
-              <li><router-link to="overtime_record"><i class="fa fa-circle-o"></i> 加班记录</router-link></li>
-              <li><router-link to="overtime_petitioner"><i class="fa fa-circle-o"></i> 加班申请</router-link></li>
-              <li><router-link to="overtime_pass"><i class="fa fa-circle-o"></i> 加班审批</router-link></li>
+              <li><router-link to="overtime_record"><i class="fa fa-circle-o"></i> Proceso de Permisos</router-link></li>
+              <li><router-link to="overtime_petitioner"><i class="fa fa-circle-o"></i> Manual de Permisos</router-link></li>
+              <li><router-link to="overtime_pass"><i class="fa fa-circle-o"></i> Unidad 2-C</router-link></li>
               <!--<li><a href="pages/charts/morris.html"><i class="fa fa-circle-o"></i> Morris</a></li>-->
               <!--<li><a href="pages/charts/flot.html"><i class="fa fa-circle-o"></i> Flot</a></li>-->
               <!--<li><a href="pages/charts/inline.html"><i class="fa fa-circle-o"></i> Inline charts</a></li>-->
@@ -196,21 +201,21 @@
           </li>
           <li class="treeview">
             <a href="#">
-              <i class="fa fa-pie-chart"></i> <span>数据管理</span>
+              <i class="fa fa-pie-chart"></i> <span>Unidad 3</span>
               <span class="pull-right-container">
                 <i class="fa fa-angle-left pull-right"></i>
                 <!-- <small class="label pull-right bg-green">new</small> -->
               </span>
             </a>
             <ul class="treeview-menu">
-              <li><router-link to="import_data"><i class="fa fa-circle-o"></i> 导入数据</router-link></li>
+              <li><router-link to="import_data"><i class="fa fa-circle-o"></i> Unidad 3-A</router-link></li>
             </ul>
           </li>
           
-          <!-- <li class="header">LABELS</li>
-          <li><a href="#"><i class="fa fa-circle-o text-red"></i> <span>Important</span></a></li>
+          <li class="header">LABELS</li>
+          <li><a href="https://www.manabi.gob.ec"><i class="fa fa-home text-red"></i> <span>Gobierno Provincial</span></a></li>
           <li><a href="#"><i class="fa fa-circle-o text-yellow"></i> <span>Warning</span></a></li>
-          <li><a href="#"><i class="fa fa-circle-o text-aqua"></i> <span>Information</span></a></li> -->
+          <li><a href="https://twitter.com/GobiernodManabi"><i class="fa fa-twitter text-aqua"></i> <span>@GobiernodManabi</span></a></li>
         </ul>
       </section>
       <!-- /.sidebar -->
