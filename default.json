@@ -1,0 +1,64 @@
+{
+    "gc-gpm-v2": {
+      "build": {
+        "input": "./source",
+        "output": "./httpdocs",
+        "copy": [
+          "app",
+          "css",
+          "images",
+          "js",
+          ".nojekyll",
+          "manifest.json",
+          "manifest.webapp",
+          "humans.txt",
+          "favicon.ico",
+          "robots.txt"
+        ],
+        "ignore": [
+          "_inc"
+        ],
+        "compile": [
+          "html",
+          "less",
+          "css",
+          "js",
+          "md",
+          "svg"
+        ],
+        "prettyUrl": false,
+        "less": true,
+        "esLint": true,
+        "bundle": {
+          "js": true,
+          "css": true,
+          "gc-gpm-v2": true
+        },
+        "minify": {
+          "disable": false,
+          "collapseWhitespace": true,
+          "removeOptionalTags": true,
+          "removeRedundantAttributes": true,
+          "removeScriptTypeAttributes": true,
+          "removeTagWhitespace": true,
+          "useShortDoctype": true,
+          "collapseBooleanAttributes": true,
+          "removeAttributeQuotes": true,
+          "removeEmptyAttributes": true,
+          "minifyCSS": true,
+          "minifyJS": true
+        }
+      }//,
+      //"app": {
+      //  "title": "GC-GPM-v2",
+        //"googleSiteId": "UA-123-456",
+        //"resourcePath": "app/",
+        //"libraryPath": "https://zuixjs.github.io/zkit/lib/",
+        //"zuixjs.github.io": {
+        //  "resourcePath": "/gc-gpm/app/",
+        //  "libraryPath": "https://zuixjs.github.io/zkit/lib/"
+        //}
+      //}
+    }
+  }
+  

@@ -8,7 +8,7 @@
         <!-- mini logo for sidebar mini 50x50 pixels -->
         <span class="logo-mini">G</span>
         <!-- logo for regular state and mobile devices -->
-        <img src="./dist/img/Logo-gpm.jpg" class="img-fluid img-thumbnail" alt="GPM">
+        <img src="./dist/img/Logo-gpm.jpg" class="img-fluid" heigth="240" width="200" alt="GPM">
         <span class="logo-lg"><b>GC-GPM</b></span>
       </a>
       
@@ -21,17 +21,18 @@
         <!-- Navbar Right Menu -->
         <div class="navbar-custom-menu">
           <ul class="nav navbar-nav">
-            <li>
+            <!--<li>
               <a href="#">
                 <span class="hidden-xs">Datos</span>
               </a>
-            </li>
+            </li>-->
             <!-- Messages: style can be found in dropdown.less-->
             <!-- Notifications: style can be found in dropdown.less -->
             <li class="dropdown notifications-menu">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                <i class="fa fa-bell-o"></i>
-                <span class="label label-warning">10</span>
+                <!--<i class="fa fa-bell-o"></i>-->
+                <i class="fa fa-ioxhost"></i>
+                <!--<span class="label label-warning">10</span>-->
               </a>
               <ul class="dropdown-menu">
                 <li class="header text-center">Menú principal</li>
@@ -39,11 +40,16 @@
                   <!-- inner menu: contains the actual data -->
                   <ul class="menu">
                     <li>
-                      <a href="#">
-                        <i class="fa fa-users text-aqua"></i> 5 new members joined today
+                      <a href="http://app.manabi.gob.ec/appreg/Wfmven_tra.aspx" target="_blank">
+                        <i class="fa fa-users text-aqua"></i>Trámites en línea
                       </a>
                     </li>
                     <li>
+                      <a href="https://www.manabi.gob.ec" target="_blank">
+                        <i class="fa fa-hospital-o"></i>Gobierno de Manabí
+                      </a>
+                    </li>
+                    <!--<li>
                       <a href="#">
                         <i class="fa fa-warning text-yellow"></i> Very long description here that may not fit into the
                         page and may cause design problems
@@ -63,31 +69,30 @@
                       <a href="#">
                         <i class="fa fa-user text-red"></i> You changed your username
                       </a>
-                    </li>
+                    </li>-->
                   </ul>
                 </li>
-                <li class="footer"><a href="#">Ver todo</a></li>
+                <!--<li class="footer"><a href="#">Ver todo</a></li>-->
               </ul>
             </li>
             <!-- Tasks: style can be found in dropdown.less -->
             <!-- User Account: style can be found in dropdown.less -->
-            <li class="dropdown user user-menu">
+            <!-- Menú <li class="dropdown user user-menu">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                 <img src="./dist/img/user2-160x160.jpg" class="user-image" alt="GPM">
                 <!--<img src="./dist/img/Logo-gpm.jpg" class="user-image" alt="GPM">-->
-                <span class="hidden-xs">Menú</span>
+                <!--<span class="hidden-xs">Menú</span>
               </a>
-              <ul class="dropdown-menu">
+              <ul class="dropdown-menu">-->
                 <!-- User image -->
-                <li class="user-header">
-                  <img src="./dist/img/user2-160x160.jpg" class="img-circle" alt="GPM">
+                <!--<li class="user-header">
+                  <img src="./dist/img/user2-160x160.jpg" class="img-circle" alt="GPM"> -->
                   <!--<img src="./dist/img/logo-gpm-2.png" class="img-circle" alt="GPM">-->
-
-                  <p>
-                    GC-GPM
+                  <!--<p> 
+                    GC-GPM -->
                     <!--<small>注册日期：2016年9月14日</small>-->
-                  </p>
-                </li>
+                  <!--</p>
+                </li>-->
                 <!-- Menu Body -->
                 <!-- <li class="user-body"> -->
                   <!-- <div class="row"> -->
@@ -107,7 +112,7 @@
                   <!-- &lt;!&ndash; /.row &ndash;&gt; -->
                 <!-- </li> -->
                 <!-- Menu Footer-->
-                <li class="user-footer">
+                <!--<li class="user-footer">
                   <div class="pull-left">
                     <a href="#" class="btn btn-default btn-flat">Datos personales</a>
                   </div>
@@ -116,7 +121,7 @@
                   </div>
                 </li>
               </ul>
-            </li>
+            </li> Fin del Menú-->
             <!-- Control Sidebar Toggle Button -->
             <!-- <li>
               <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
@@ -166,7 +171,7 @@
           </li>
           <li class="treeview">
             <a href="#">
-              <i class="fa fa-files-o"></i>
+              <i class="fa fa-area-chart"></i>
               <span>Planif. y Ord. Territorial</span>
               <span class="pull-right-container">
                 <i class="fa fa-angle-left pull-right"></i>
@@ -174,14 +179,45 @@
               </span>
             </a>
             <ul class="treeview-menu">
-              <li><router-link to="attendance"><i class="fa fa-circle-o"></i>Transparencia y Seguimiento</router-link></li>
-              <li><router-link to="leave_record"><i class="fa fa-circle-o"></i>Manual Cumplimiento CGE</router-link></li>
-              <li><router-link to="leave_record"><i class="fa fa-circle-o"></i>Manual Transp. y Procesos</router-link></li>
+              <li class="treeview">
+                <a href="#">
+                  <i class="fa fa-connectdevelop"></i>
+                    <span>Diagramas</span>
+                    <span class="pull-right-container">
+                      <i class="fa fa-angle-left pull-right"></i>
+                      <!-- <small class="label pull-right bg-green">new</small> -->
+                    </span>
+                </a>
+                <ul class="treeview-menu">            
+                  <!--<li><a href="https://www.gestioncalidadgpm.org/archivos/gpm/planificacion/transparencia_seguimiento/index.html" target="_blank"><i class="fa fa-circle-o"></i>Transparencia y Seguimiento</a></li>-->
+                  <li><router-link to="diagrama_transparencia_seguimiento"><i class="fa fa-circle-o"></i>Transparencia y Seguimiento</router-link></li>
+                </ul>
+              </li>
+              <li class="treeview">
+                <a href="#">
+                  <i class="fa fa-files-o"></i>
+                    <span>Manuales</span>
+                    <span class="pull-right-container">
+                      <i class="fa fa-angle-left pull-right"></i>
+                      <!-- <small class="label pull-right bg-green">new</small> -->
+                    </span>
+                </a>
+                <ul class="treeview-menu">            
+                  <!--<li><router-link to="manual_cumplimiento_cge"><i class="fa fa-circle-o"></i>Manual Cumplimiento CGE</router-link></li>-->
+                  <li><a href="https://www.gestioncalidadgpm.org/archivos/gpm/planificacion/transparencia_seguimiento/Manual_de_Cumplimiento_CGE.pdf"><i class="fa fa-circle-o"></i>Manual Cumplimiento CGE</a></li>
+                  
+                  <!--<li><router-link to="leave_record"><i class="fa fa-circle-o"></i>Manual Transp. y Procesos</router-link></li>-->
+                  <li><a href="https://www.gestioncalidadgpm.org/archivos/gpm/planificacion/transparencia_seguimiento/Manual_Procesos_Transparencia_Acceso_Información_v1.pdf"><i class="fa fa-circle-o"></i>Manual Transp. y Procesos</a></li>
+                </ul>
+              </li>              
+              <!--<li><router-link to="transparencia_seguimiento"><i class="fa fa-circle-o"></i>Transparencia y Seguimiento</router-link></li>
+              <li><router-link to="leave_record"><i class="fa fa-circle-o"></i>Manual Cumplimiento CGE</router-link></li> -->
+              
               <!--<li><a href="pages/layout/boxed.html"><i class="fa fa-circle-o"></i> Boxed</a></li>-->
               <!--<li><a href="pages/layout/fixed.html"><i class="fa fa-circle-o"></i> Fixed</a></li>-->
               <!--<li><a href="pages/layout/collapsed-sidebar.html"><i class="fa fa-circle-o"></i> Collapsed Sidebar</a></li>-->
-            </ul>
-          </li>
+              </ul>
+            
           <li class="treeview">
             <a href="#">
               <i class="fa fa-th"></i> <span>Direcci&oacute;n de TTHH</span>
@@ -191,31 +227,89 @@
               </span>
             </a>
             <ul class="treeview-menu">
-              <li><router-link to="overtime_record"><i class="fa fa-circle-o"></i> Proceso de Permisos</router-link></li>
-              <li><router-link to="overtime_petitioner"><i class="fa fa-circle-o"></i> Manual de Permisos</router-link></li>
-              <li><router-link to="overtime_pass"><i class="fa fa-circle-o"></i> Unidad 2-C</router-link></li>
-              <!--<li><a href="pages/charts/morris.html"><i class="fa fa-circle-o"></i> Morris</a></li>-->
-              <!--<li><a href="pages/charts/flot.html"><i class="fa fa-circle-o"></i> Flot</a></li>-->
-              <!--<li><a href="pages/charts/inline.html"><i class="fa fa-circle-o"></i> Inline charts</a></li>-->
+              <li class="treeview">
+                <a href="#">
+                  <i class="fa fa-connectdevelop"></i>
+                    <span>Diagramas</span>
+                    <span class="pull-right-container">
+                      <i class="fa fa-angle-left pull-right"></i>
+                      <!-- <small class="label pull-right bg-green">new</small> -->
+                    </span>
+                </a>
+                <ul class="treeview-menu">            
+                <!--<li><a href="https://www.gestioncalidadgpm.org/archivos/gpm/talento_humano/procesos/permisos/index.html" target="_blank"><i class="fa fa-circle-o"></i>Proceso de Permisos</a></li>-->
+                <li><router-link to="diagrama_proceso_permisos"><i class="fa fa-circle-o"></i>Proceso de Permisos</router-link></li>
+              </ul>
+              </li>
+              <li class="treeview">
+                <a href="#">
+                  <i class="fa fa-files-o"></i>
+                    <span>Manuales</span>
+                    <span class="pull-right-container">
+                      <i class="fa fa-angle-left pull-right"></i>
+                      <!-- <small class="label pull-right bg-green">new</small> -->
+                    </span>
+                </a>
+                  <ul class="treeview-menu">          
+                    <!--<li><router-link to="overtime_record"><i class="fa fa-circle-o"></i> Proceso de Permisos</router-link></li>-->
+                    <li><a href="https://www.gestioncalidadgpm.org/archivos/gpm/talento_humano/procesos/permisos/manual_permisos.pdf" target="_blank"><i class="fa fa-circle-o"></i> Manual de Permisos</a></li>
+                    <!--<li><router-link to="overtime_pass"><i class="fa fa-circle-o"></i> Unidad 2-C</router-link></li>-->
+                    <!--<li><a href="pages/charts/morris.html"><i class="fa fa-circle-o"></i> Morris</a></li>-->
+                    <!--<li><a href="pages/charts/flot.html"><i class="fa fa-circle-o"></i> Flot</a></li>-->
+                    <!--<li><a href="pages/charts/inline.html"><i class="fa fa-circle-o"></i> Inline charts</a></li>-->
+                  </ul>
+                </li>
             </ul>
-          </li>
-          <li class="treeview">
+          <!--<li class="treeview">
             <a href="#">
               <i class="fa fa-pie-chart"></i> <span>Unidad 3</span>
+              <span class="pull-right-container">
+                <i class="fa fa-angle-left pull-right"></i>-->
+                <!-- <small class="label pull-right bg-green">new</small> -->
+              <!--</span>
+            </a>
+            <ul class="treeview-menu">
+              <li><router-link to="import_data"><i class="fa fa-circle-o"></i> Unidad 3-A</router-link></li>
+            </ul>
+          </li>-->
+
+          <li class="treeview">
+            <a href="#">
+              <i class="fa fa-bars"></i> <span>Formatos Generales</span>
               <span class="pull-right-container">
                 <i class="fa fa-angle-left pull-right"></i>
                 <!-- <small class="label pull-right bg-green">new</small> -->
               </span>
             </a>
             <ul class="treeview-menu">
-              <li><router-link to="import_data"><i class="fa fa-circle-o"></i> Unidad 3-A</router-link></li>
+              <li><a href="https://www.gestioncalidadgpm.org/archivos/formatos/Acta_de_trabajo_reunion_Blanco.docx"><i class="fa fa-circle-o"></i>Acta de Trabajo Reunión - Blanco</a></li>
+              <li><a href="https://www.gestioncalidadgpm.org/archivos/formatos/Acta_de_trabajo_reunion_Propuesta.docx"><i class="fa fa-circle-o"></i>Acta de Trabajo Reunión - Propuesta</a></li>
+              <li><a href="https://www.gestioncalidadgpm.org/archivos/formatos/Codificacion_de_Documentos_Propuesta.docx"><i class="fa fa-circle-o"></i>Codificación de Documentos - Propuesta</a></li>
+              <li><a href="https://www.gestioncalidadgpm.org/archivos/formatos/Listado_participantes_Propuesta.docx"><i class="fa fa-circle-o"></i>Listado de Participantes - Propuesta</a></li>
             </ul>
           </li>
           
-          <li class="header">LABELS</li>
-          <li><a href="https://www.manabi.gob.ec"><i class="fa fa-home text-red"></i> <span>Gobierno Provincial</span></a></li>
-          <li><a href="#"><i class="fa fa-circle-o text-yellow"></i> <span>Warning</span></a></li>
-          <li><a href="https://twitter.com/GobiernodManabi"><i class="fa fa-twitter text-aqua"></i> <span>@GobiernodManabi</span></a></li>
+          <li class="treewview">
+            <a href="#">
+              <i class="fa fa-bars"></i><span>Indicadores</span>
+              <span class="pull-right-container">
+                <i class="fa fa-angle-left pull-right"></i>
+              </span>
+            </a>
+            <ul class="treeview-menu">
+              <li><router-link to="/indicadores"><i class="fa fa-char text-blue"></i><span>Indicadores</span></router-link></li>
+            </ul>
+
+
+          </li>
+
+          <li class="header">Otros</li>
+          <!--<li><a href="https://www.manabi.gob.ec" target="_blank"><i class="fa fa-home text-red"></i> <span>Gobierno Provincial</span></a></li>-->
+          <li><router-link to="/gpm"><i class="fa fa-home text-red"></i> <span>Gobierno Provincial</span></router-link></li>
+          <!--<li><a href="https://www.youtube.com/channel/UCqEGTBtv-z49CXA7BzbuLKg" target="_blank"><i class="fa fa-youtube text-red"></i><span>Canal de YouTube</span></a></li>-->
+          <li><router-link to="/gpm-youtube"><i class="fa fa-youtube text-red"></i><span>Canal de YouTube</span></router-link></li>
+          <!-- <li><a href="https://twitter.com/GobiernodManabi" target="_blank"><i class="fa fa-twitter text-aqua"></i> <span>Gobierno de Manabí</span></a></li>-->
+          <li><router-link to="/gpm-twitter"><i class="fa fa-twitter text-aqua"></i> <span>Gobierno de Manabí</span></router-link></li>
         </ul>
       </section>
       <!-- /.sidebar -->
@@ -440,7 +534,8 @@
     var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
     var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
     if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {
-      alert(1);
+      //alert(1);
+      console.log("Versión móvil");
         $("a[href!='#']").attr("data-toggle","offcanvas");
     }else{
       // alert(2);

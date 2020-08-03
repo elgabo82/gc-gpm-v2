@@ -13,6 +13,8 @@ import overtime_pass from './components/overtime_pass.vue'
 import import_data from './components/import_data.vue'
 import store from './store/index'
 import Hello from './components/Hello.vue'
+import transparencia_seguimiento from './components/transparencia_seguimiento.vue'
+import manual_cumplimiento_cge from './components/manual_cumplimiento_cge.vue'
 
 Vue.use(VueRouter)
 
@@ -34,8 +36,35 @@ Vue.use(VueRouter)
 // 我们晚点在讨论嵌套路由。
 const routes = [
   { path: '/',name:"home",component: home},
-  { path: '/attendance',component: attendance},
-  { path: '/leave_record',component: leave_record},
+  //{ path: '/attendance',component: attendance},
+  { path: '/transparencia_seguimiento',component: transparencia_seguimiento}, 
+  {
+    path: '/diagrama_transparencia_seguimiento',
+    beforeEnter() { location.href = 'https://www.gestioncalidadgpm.org/archivos/gpm/planificacion/transparencia_seguimiento/index.html' }
+  },
+  { path: '/diagrama_proceso_permisos',
+    beforeEnter() { location.href = 'https://www.gestioncalidadgpm.org/archivos/gpm/talento_humano/procesos/permisos/index.html' }
+  },
+  {
+    path: '/gpm',
+    beforeEnter() { location.href = 'https://www.manabi.gob.ec'}
+
+  },
+  {
+    path: '/gpm-youtube',
+    beforeEnter() { location.href = 'https://www.youtube.com/channel/UCqEGTBtv-z49CXA7BzbuLKg' }
+
+  },
+  {
+    path: '/gpm-twitter',
+    beforeEnter() { location.href = 'https://twitter.com/GobiernodManabi'}
+  },
+  {
+    path: '/indicadores',
+    beforeEnter() { location.href = 'https://app.powerbi.com/view?r=eyJrIjoiMTg5ZTI0YTQtYjVjZC00ODgyLWFlMjAtMTFmZjhkMDJmMGI4IiwidCI6IjdjOWM3MWQ3LTAwZjktNDc2ZC04ZDA1LWY1MWFiZDRlYzIyYSIsImMiOjh9' }
+
+  },
+  //{ path: '/leave_record',component: leave_record},
   { path: '/overtime_pass',component: overtime_pass},
   { path: '/overtime_record',component: overtime_record},
   { path: '/overtime_petitioner',component: overtime_petitioner},
